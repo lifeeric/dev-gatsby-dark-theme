@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
+
 const Row = styled.div`
   display: flex;
   flex-direction: row;
@@ -11,7 +12,6 @@ const Col = styled.div`
   flex: 1 1 30%;
   max-width: 40%;
   margin: 10px;
-  height: 150px;
   background: ${({ theme }) => theme.body};
   color: ${({ theme }) => theme.font};
   border: 1px solid #ccc;

@@ -1,0 +1,102 @@
+$background-color: #e8eaee;
+$card-color: #fff;
+$font: #36373b;
+$font-sec: #718796;
+
+$button: #121212;
+
+:root {
+  --color-bg: #{$background-color};
+  --color-card: #{$card-color};
+  --color-text: #{$font};
+  --color-sec: #{$font-sec};
+  --color-button: #5679fb;
+}
+
+.dark {
+  --color-bg: #121212;
+  --color-card: #1e1e1e;
+  --color-text: #e3e3e3;
+  --color-sec: #989898;
+  --color-button: #bb86fc;
+}
+
+.toggler {
+  display: flex;
+  justify-content: center;
+}
+
+.profile {
+  /** container */
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+
+  /** card */
+  &__card {
+    width: 350px;
+    height: 170px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    border-radius: 7px;
+    background: var(--color-card);
+    display: flex;
+    flex-direction: row;
+
+    /** Box Shadow */
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+      0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+      0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+      0 100px 80px rgba(0, 0, 0, 0.12);
+  }
+
+  /** img */
+  &__img {
+    width: 200px;
+    overflow: hidden;
+    flex: 1 1 40%;
+
+    & img {
+      object-fit: cover;
+    }
+  }
+
+  /** Body */
+
+  &__body {
+    margin: 4px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    &--title {
+      font-size: 23px;
+      color: var(--color-text);
+    }
+
+    &--secondary {
+      display: block;
+      padding: 4px 0;
+      color: var(--color-sec);
+      font-size: 13px;
+    }
+  }
+
+  /** Button */
+
+  &__actions {
+    margin-top: 15px;
+    &--btn {
+      width: 100%;
+      margin: 4px 0;
+      background: var(--color-button);
+      padding: 8px 16px;
+      border: transparent;
+      color: #fff;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+  }
+}

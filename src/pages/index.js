@@ -3,9 +3,8 @@ import { DarkModeToggler } from "react-darkmode-toggler"
 import { Post } from "../components/Post/Post"
 import styled, { ThemeProvider } from "styled-components"
 import { lightTheme, darkTheme } from "../components/Theme/Theme"
-import "./style.css"
+// import "./style.css"
 import { GlobalStyle } from "../components/Theme/globalStyle"
-
 /**
  * To center Toggler
  */
